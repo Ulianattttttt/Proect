@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+  
+   
+}
+
+.logo{
+width: 100%;
+height: 100px;
+background: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.text{
+    
+   color: white;
+   font-size: 40px;
+   padding-left: 15px;
+}
+
+.menu{
+width: 40px;
+height: 40px;
+padding-right: 50px;
+border: none;
+background: none;
+
+}
+.menu span{
+    height: 2px;
+    width: 30px;
+    background: white;
+    display: block;
+    margin-bottom: 5px ;
+    border-radius: 5px;
+    
+}
+
+.menu:focus{
+    outline: none;
+    box-sizing: none;
+}
+
+
+.menu.pushed span{
+    position: absolute;
+    
+}
+
+.menu.pushed span:nth-child(1){
+    opacity: 0;
+ 
+}
+
+.menu.pushed span:nth-child(2){
+    transform: rotate(120deg);
+    
+}
+
+.menu.pushed span:nth-child(3){
+    transform: rotate(40deg);
+    
+}
+
+.main-menu{
+ width: 300px;
+ height: 100%;
+ background: black;
+ position: fixed;
+ margin-left: 1630px;
+}
+
+.main-menu a{
+    padding-top: 60px ;
+    color: white;
+}
