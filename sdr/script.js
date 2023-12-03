@@ -10,3 +10,9 @@ menu.addEventListener("click", () => {
     }
 );
 }
+
+
+function addNewTask(event){
+let list = document.querySelector
+
+}
