@@ -12,7 +12,11 @@ menu.addEventListener("click", () => {
 }
 
 
-function addNewTask(event){
-let list = document.querySelector
+function addNewItem(){
+let men = document.getElementById("men");
 
+if(men){
+    let inner = men.innerHTML;
+    inner += div
+}
 }
