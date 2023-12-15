@@ -29,15 +29,15 @@
     <main>
         <div class="reg-form"> 
             <h2>Форма регистрации</h2>
-            <form action="" method="post">
+            <form action="" method="post" onsubmit="return sendForm(event)">
                 
                 <div class="form-grup">
                     <label>ф.и.о.</label>
-                    <input type="text" class="form-control" name="fio" required>
+                    <input type="text" class="form-control" name="fio" required value="rrrrrrr">
                 </div>
                 <div class="form-grup">
                     <label>День рождения</label>
-                    <input type="date" class="form-control" name="birs"  required>
+                    <input type="date" class="form-control" name="birs"  required value="02.02.2000">
                 </div>
                 <div class="form-grup">
                     <label>Пол</label>
@@ -64,10 +64,11 @@
                 </div>
                 <div class="form-grup">
                     <label>Адрес</label>
-                    <textarea name="adres" class="form-control"  required></textarea>
+                    <textarea name="adres" class="form-control"  required>Минск</textarea>
+                    <div class="error" id="addres-error"></div>
                 </div>
                 <div class="form-grup">
-                    <button class="form-control"  type="button">Зарегестрировать</button>
+                    <button class="form-control"  type="submit">Зарегестрировать</button>
                 </div>
             </form>
         </div>
