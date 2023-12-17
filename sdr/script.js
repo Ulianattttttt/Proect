@@ -43,5 +43,35 @@ function sendForm(event){
         error.name="Введите корректное имя"
     }
 
-    return false
+    let date = event.target[1].value;
+    let pol = event.target[2].value;
+    let phone = event.target[3].value;
+    let email = event.target[4].value;
+    let git = event.target[5].value;
+
+    let errors = Object.keys(error)
+
+    for(key in error){
+        errors++;
+    }
+    if(errors){
+        return false;
+    }else{
+        let list = document.getElementsByClassName("card-list")[0];
+
+        let now = new Date;
+        
+        list.insertAdjacentHTML(
+            "beforeend",
+            `<div class="card">
+            <img src="ava.png" alt="" />
+            <div class="card-name">${name}</div>
+            <div class="card-age">Возраст: ${age}</div>
+            <button type="button">info</button>
+        </div>"`);
+        
+    }
+
+
+    return false;
 }
